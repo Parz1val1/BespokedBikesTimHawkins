@@ -76,7 +76,6 @@
     <Compile Include="Database\Models\Customer.cs">
       <DependentUpon>BeSpokedDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\BeSpokedContext.cs" />
     <Compile Include="Database\Models\Discount.cs">
       <DependentUpon>BeSpokedDb.tt</DependentUpon>
     </Compile>
@@ -89,6 +88,11 @@
     <Compile Include="Database\Models\Salesperson.cs">
       <DependentUpon>BeSpokedDb.tt</DependentUpon>
     </Compile>
+    <Compile Include="Database\Repositories\BaseRepository.cs" />
+    <Compile Include="Database\Repositories\CustomerRepository.cs" />
+    <Compile Include="Database\Repositories\ProductRepository.cs" />
+    <Compile Include="Database\Repositories\SaleRepository.cs" />
+    <Compile Include="Database\Repositories\SalespersonRepository.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
