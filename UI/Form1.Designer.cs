@@ -29,6 +29,7 @@ namespace BespokedBikesTimHawkins.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.salespersonsTabPage = new System.Windows.Forms.TabPage();
             this.salespersonsStartDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -82,6 +83,15 @@ namespace BespokedBikesTimHawkins.UI
             this.salesDataGridView = new System.Windows.Forms.DataGridView();
             this.salesToDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.salesFromDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.salespersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.managerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.terminationDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salespersonIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.salespersonsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonsDataGridView)).BeginInit();
@@ -91,6 +101,7 @@ namespace BespokedBikesTimHawkins.UI
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
             this.salesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -231,7 +242,18 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsDataGridView
             // 
+            this.salespersonsDataGridView.AutoGenerateColumns = false;
             this.salespersonsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.salespersonsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salespersonIdDataGridViewTextBoxColumn,
+            this.firstnameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn,
+            this.startDateDataGridViewTextBoxColumn,
+            this.terminationDateDataGridViewTextBoxColumn,
+            this.managerDataGridViewTextBoxColumn});
+            this.salespersonsDataGridView.DataSource = this.salespersonBindingSource;
             this.salespersonsDataGridView.Location = new System.Drawing.Point(11, 305);
             this.salespersonsDataGridView.Name = "salespersonsDataGridView";
             this.salespersonsDataGridView.Size = new System.Drawing.Size(941, 242);
@@ -617,6 +639,58 @@ namespace BespokedBikesTimHawkins.UI
             this.salesFromDateTimePicker.TabIndex = 0;
             this.salesFromDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // salespersonBindingSource
+            // 
+            this.salespersonBindingSource.DataSource = typeof(BespokedBikesTimHawkins.Database.Models.Salesperson);
+            // 
+            // managerDataGridViewTextBoxColumn
+            // 
+            this.managerDataGridViewTextBoxColumn.DataPropertyName = "Manager";
+            this.managerDataGridViewTextBoxColumn.HeaderText = "Manager";
+            this.managerDataGridViewTextBoxColumn.Name = "managerDataGridViewTextBoxColumn";
+            // 
+            // terminationDateDataGridViewTextBoxColumn
+            // 
+            this.terminationDateDataGridViewTextBoxColumn.DataPropertyName = "TerminationDate";
+            this.terminationDateDataGridViewTextBoxColumn.HeaderText = "TerminationDate";
+            this.terminationDateDataGridViewTextBoxColumn.Name = "terminationDateDataGridViewTextBoxColumn";
+            // 
+            // startDateDataGridViewTextBoxColumn
+            // 
+            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // firstnameDataGridViewTextBoxColumn
+            // 
+            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
+            // 
+            // salespersonIdDataGridViewTextBoxColumn
+            // 
+            this.salespersonIdDataGridViewTextBoxColumn.DataPropertyName = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn.HeaderText = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn.Name = "salespersonIdDataGridViewTextBoxColumn";
+            // 
             // BeSpokedBikesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -639,6 +713,7 @@ namespace BespokedBikesTimHawkins.UI
             this.salesTabPage.ResumeLayout(false);
             this.salesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -698,6 +773,15 @@ namespace BespokedBikesTimHawkins.UI
         private System.Windows.Forms.Button salesCreateButton;
         private System.Windows.Forms.DateTimePicker salespersonsStartDateDateTimePicker;
         private System.Windows.Forms.DateTimePicker salespersonsTerminationDateDateTimePicker;
+        private System.Windows.Forms.BindingSource salespersonBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salespersonIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn terminationDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn managerDataGridViewTextBoxColumn;
     }
 }
 

@@ -17,7 +17,7 @@ namespace BespokedBikesTimHawkins
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new BeSpokedBikesForm());
-            System.Data.Entity.Database.SetInitializer<BeSpokedContext>(new DbInitializer());
+            System.Data.Entity.Database.SetInitializer<BeSpokedContext>(new DbInitializer<BeSpokedContext>());
         }
     }
 }

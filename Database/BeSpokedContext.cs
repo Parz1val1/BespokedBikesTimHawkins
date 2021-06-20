@@ -5,6 +5,11 @@ namespace BespokedBikesTimHawkins.Database
 {
     public class BeSpokedContext : DbContext
     {
+
+        public BeSpokedContext() : base("BeSpokedContextDB")
+        {
+        }
+
         public DbSet<Product> Products { get; set; }
         public DbSet<Salesperson> Salespersons { get; set; }
         public DbSet<Customer> Customers { get; set; }
