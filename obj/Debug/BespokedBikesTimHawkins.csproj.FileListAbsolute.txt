@@ -1,0 +1,15 @@
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\BespokedBikesTimHawkins.exe.config
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\BespokedBikesTimHawkins.exe
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\BespokedBikesTimHawkins.pdb
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\EntityFramework.dll
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\EntityFramework.xml
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.csprojAssemblyReference.cache
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.UI.BeSpokedBikesForm.resources
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.Properties.Resources.resources
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.csproj.GenerateResource.cache
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.csproj.CoreCompileInputs.cache
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.csproj.CopyComplete
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.exe
+C:\Users\Tim Hawkins\source\repos\BespokedBikesTimHawkins\obj\Debug\BespokedBikesTimHawkins.pdb
