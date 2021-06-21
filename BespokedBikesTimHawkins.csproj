@@ -58,22 +58,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeSpokedDbDataSet.Designer.cs">
+    <Compile Include="DataSets\BeSpokedDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BeSpokedDbDataSet1.Designer.cs">
+    <Compile Include="DataSets\BeSpokedDbDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BeSpokedDbDataSet2.Designer.cs">
+    <Compile Include="DataSets\BeSpokedDbDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BeSpokedDbDataSet3.Designer.cs">
+    <Compile Include="DataSets\BeSpokedDbDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
@@ -146,48 +146,48 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BeSpokedDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="BeSpokedDbDataSet.xsc">
+    <None Include="DataSets\BeSpokedDbDataSet.xsc">
       <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet.xsd">
+    <None Include="DataSets\BeSpokedDbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BeSpokedDbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BeSpokedDbDataSet.xss">
+    <None Include="DataSets\BeSpokedDbDataSet.xss">
       <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet1.xsc">
+    <None Include="DataSets\BeSpokedDbDataSet1.xsc">
       <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet1.xsd">
+    <None Include="DataSets\BeSpokedDbDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BeSpokedDbDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BeSpokedDbDataSet1.xss">
+    <None Include="DataSets\BeSpokedDbDataSet1.xss">
       <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet2.xsc">
+    <None Include="DataSets\BeSpokedDbDataSet2.xsc">
       <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet2.xsd">
+    <None Include="DataSets\BeSpokedDbDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BeSpokedDbDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BeSpokedDbDataSet2.xss">
+    <None Include="DataSets\BeSpokedDbDataSet2.xss">
       <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet3.xsc">
+    <None Include="DataSets\BeSpokedDbDataSet3.xsc">
       <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
     </None>
-    <None Include="BeSpokedDbDataSet3.xsd">
+    <None Include="DataSets\BeSpokedDbDataSet3.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BeSpokedDbDataSet3.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BeSpokedDbDataSet3.xss">
+    <None Include="DataSets\BeSpokedDbDataSet3.xss">
       <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Database\Models\BeSpokedDb.edmx.diagram">
