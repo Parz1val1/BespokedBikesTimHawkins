@@ -20,24 +20,26 @@ namespace BespokedBikesTimHawkins.Database.Repositories
 
         public IList<Sale> GetAllBetweenDates(DateTime beginDate, DateTime endDate)
         {
-            if(beginDate.Date < endDate.Date)
+            var salesList = new List<Sale>();
+            foreach (Sale s in this.Context.Sales)
             {
-                return this.Context.Sales.Local.Where(s => (s.SalesDate.Date > beginDate.Date && s.SalesDate.Date < endDate.Date)).ToList();
+                if (s.SalesDate > beginDate && s.SalesDate < endDate)
+                {
+                    salesList.Add(s);
+                }
             }
-            else if(beginDate.Date > endDate.Date)
-            {
-                return this.Context.Sales.Local.Where(s => (s.SalesDate.Date < beginDate.Date && s.SalesDate.Date > endDate.Date)).ToList();
-            }
-            else
-            {
-                return this.Context.Sales.Local.Where(s => (s.SalesDate.Date == beginDate.Date)).ToList();
-            }
+            return salesList;
         }
 
         public async Task<bool> CreateAsync(Sale newSale)
         {
             this.Context.Sales.Add(newSale);
             return await this.Context.SaveChangesAsync() == 1;
+        }
+
+        public IList<Sale> GetAllForSalespersonId(Guid salespersonId)
+        {
+            return this.Context.Sales.Where(s => s.SalespersonId == salespersonId).ToList();
         }
     }
 }

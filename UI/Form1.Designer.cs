@@ -124,13 +124,18 @@ namespace BespokedBikesTimHawkins.UI
             this.beSpokedDbDataSet2 = new BespokedBikesTimHawkins.DataSets.BeSpokedDbDataSet2();
             this.salesToDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.salesFromDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.commissionReportTabPage = new System.Windows.Forms.TabPage();
+            this.commissionReportsButton = new System.Windows.Forms.Button();
+            this.commissionReportYearTextBox = new System.Windows.Forms.TextBox();
+            this.commissionReportYearLabel = new System.Windows.Forms.Label();
+            this.commissionReportComboBox = new System.Windows.Forms.ComboBox();
+            this.commissionReportQuarterLlabel = new System.Windows.Forms.Label();
+            this.commissionReportsDataGridView = new System.Windows.Forms.DataGridView();
             this.productTableAdapter = new BespokedBikesTimHawkins.DataSets.BeSpokedDbDataSetTableAdapters.ProductTableAdapter();
             this.customerTableAdapter = new BespokedBikesTimHawkins.DataSets.BeSpokedDbDataSet1TableAdapters.CustomerTableAdapter();
             this.salesTableAdapter = new BespokedBikesTimHawkins.DataSets.BeSpokedDbDataSet2TableAdapters.SalesTableAdapter();
             this.salespersonTableAdapter = new BespokedBikesTimHawkins.DataSets.BeSpokedDbDataSet3TableAdapters.SalespersonTableAdapter();
             this.salespersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.commissionReportTabPage = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.salespersonsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonsDataGridView)).BeginInit();
@@ -148,9 +153,9 @@ namespace BespokedBikesTimHawkins.UI
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).BeginInit();
             this.commissionReportTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commissionReportsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -1011,6 +1016,79 @@ namespace BespokedBikesTimHawkins.UI
             this.salesFromDateTimePicker.TabIndex = 0;
             this.salesFromDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // commissionReportTabPage
+            // 
+            this.commissionReportTabPage.Controls.Add(this.commissionReportsButton);
+            this.commissionReportTabPage.Controls.Add(this.commissionReportYearTextBox);
+            this.commissionReportTabPage.Controls.Add(this.commissionReportYearLabel);
+            this.commissionReportTabPage.Controls.Add(this.commissionReportComboBox);
+            this.commissionReportTabPage.Controls.Add(this.commissionReportQuarterLlabel);
+            this.commissionReportTabPage.Controls.Add(this.commissionReportsDataGridView);
+            this.commissionReportTabPage.Location = new System.Drawing.Point(4, 29);
+            this.commissionReportTabPage.Name = "commissionReportTabPage";
+            this.commissionReportTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.commissionReportTabPage.Size = new System.Drawing.Size(1288, 672);
+            this.commissionReportTabPage.TabIndex = 4;
+            this.commissionReportTabPage.Text = "Commission Report";
+            this.commissionReportTabPage.UseVisualStyleBackColor = true;
+            // 
+            // commissionReportsButton
+            // 
+            this.commissionReportsButton.Location = new System.Drawing.Point(10, 72);
+            this.commissionReportsButton.Name = "commissionReportsButton";
+            this.commissionReportsButton.Size = new System.Drawing.Size(190, 34);
+            this.commissionReportsButton.TabIndex = 7;
+            this.commissionReportsButton.Text = "Generate Reports";
+            this.commissionReportsButton.UseVisualStyleBackColor = true;
+            this.commissionReportsButton.Click += new System.EventHandler(this.commissionReportsButton_Click);
+            // 
+            // commissionReportYearTextBox
+            // 
+            this.commissionReportYearTextBox.Location = new System.Drawing.Point(79, 40);
+            this.commissionReportYearTextBox.Name = "commissionReportYearTextBox";
+            this.commissionReportYearTextBox.Size = new System.Drawing.Size(121, 26);
+            this.commissionReportYearTextBox.TabIndex = 6;
+            // 
+            // commissionReportYearLabel
+            // 
+            this.commissionReportYearLabel.AutoSize = true;
+            this.commissionReportYearLabel.Location = new System.Drawing.Point(26, 43);
+            this.commissionReportYearLabel.Name = "commissionReportYearLabel";
+            this.commissionReportYearLabel.Size = new System.Drawing.Size(47, 20);
+            this.commissionReportYearLabel.TabIndex = 5;
+            this.commissionReportYearLabel.Text = "Year:";
+            // 
+            // commissionReportComboBox
+            // 
+            this.commissionReportComboBox.FormattingEnabled = true;
+            this.commissionReportComboBox.Items.AddRange(new object[] {
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"});
+            this.commissionReportComboBox.Location = new System.Drawing.Point(79, 6);
+            this.commissionReportComboBox.Name = "commissionReportComboBox";
+            this.commissionReportComboBox.Size = new System.Drawing.Size(121, 28);
+            this.commissionReportComboBox.TabIndex = 4;
+            // 
+            // commissionReportQuarterLlabel
+            // 
+            this.commissionReportQuarterLlabel.AutoSize = true;
+            this.commissionReportQuarterLlabel.Location = new System.Drawing.Point(6, 9);
+            this.commissionReportQuarterLlabel.Name = "commissionReportQuarterLlabel";
+            this.commissionReportQuarterLlabel.Size = new System.Drawing.Size(67, 20);
+            this.commissionReportQuarterLlabel.TabIndex = 3;
+            this.commissionReportQuarterLlabel.Text = "Quarter:";
+            // 
+            // commissionReportsDataGridView
+            // 
+            this.commissionReportsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.commissionReportsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.commissionReportsDataGridView.Location = new System.Drawing.Point(6, 112);
+            this.commissionReportsDataGridView.Name = "commissionReportsDataGridView";
+            this.commissionReportsDataGridView.Size = new System.Drawing.Size(1279, 554);
+            this.commissionReportsDataGridView.TabIndex = 0;
+            // 
             // productTableAdapter
             // 
             this.productTableAdapter.ClearBeforeFill = true;
@@ -1030,25 +1108,6 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonBindingSource
             // 
             this.salespersonBindingSource.DataSource = typeof(BespokedBikesTimHawkins.Database.Models.Salesperson);
-            // 
-            // commissionReportTabPage
-            // 
-            this.commissionReportTabPage.Controls.Add(this.dataGridView1);
-            this.commissionReportTabPage.Location = new System.Drawing.Point(4, 29);
-            this.commissionReportTabPage.Name = "commissionReportTabPage";
-            this.commissionReportTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.commissionReportTabPage.Size = new System.Drawing.Size(1288, 672);
-            this.commissionReportTabPage.TabIndex = 4;
-            this.commissionReportTabPage.Text = "Commission Report";
-            this.commissionReportTabPage.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 169);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1279, 497);
-            this.dataGridView1.TabIndex = 0;
             // 
             // BeSpokedBikesForm
             // 
@@ -1081,9 +1140,10 @@ namespace BespokedBikesTimHawkins.UI
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).EndInit();
             this.commissionReportTabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.commissionReportTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commissionReportsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1190,7 +1250,12 @@ namespace BespokedBikesTimHawkins.UI
         private System.Windows.Forms.Label productsIdLabel;
         private System.Windows.Forms.Button salesShowAllButton;
         private System.Windows.Forms.TabPage commissionReportTabPage;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView commissionReportsDataGridView;
+        private System.Windows.Forms.TextBox commissionReportYearTextBox;
+        private System.Windows.Forms.Label commissionReportYearLabel;
+        private System.Windows.Forms.ComboBox commissionReportComboBox;
+        private System.Windows.Forms.Label commissionReportQuarterLlabel;
+        private System.Windows.Forms.Button commissionReportsButton;
     }
 }
 

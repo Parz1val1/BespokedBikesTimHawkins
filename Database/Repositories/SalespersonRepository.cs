@@ -32,7 +32,7 @@ namespace BespokedBikesTimHawkins.Database.Repositories
 
         public IList<Salesperson> GetAll()
         {
-            return this.Context.Salespersons.Local;
+            return this.Context.Salespersons.ToList();
         }
     }
 }

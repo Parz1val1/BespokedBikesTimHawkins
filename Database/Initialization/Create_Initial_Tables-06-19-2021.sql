@@ -7,7 +7,7 @@ GO
 
 /****** Object:  Table [dbo].[Product]    Script Date: 6/19/2021 9:59:40 AM ******/
 CREATE TABLE [dbo].[Product](
-	[ProductId] [uniqueidentifier] NOT NULL DEFAULT NEWSEQUENTIALID(),
+	[ProductId] [uniqueidentifier] NOT NULL UNIQUE DEFAULT NEWSEQUENTIALID(),
 	[Name] [nvarchar](50) NOT NULL,
 	[Manufacturer] [nvarchar](50) NOT NULL,
 	[Style] [nvarchar](50) NOT NULL,
@@ -22,7 +22,7 @@ GO
 
 /****** Object:  Table [dbo].[Salesperson]    Script Date: 6/19/2021 9:59:40 AM ******/
 CREATE TABLE [dbo].[Salesperson](
-	[SalespersonId] [uniqueidentifier] NOT NULL DEFAULT NEWSEQUENTIALID(),
+	[SalespersonId] [uniqueidentifier] NOT NULL UNIQUE DEFAULT NEWSEQUENTIALID(),
 	[FirstName] [nvarchar](50) NOT NULL,
 	[LastName] [nvarchar](50) NOT NULL,
 	[Address] [nvarchar](50) NOT NULL,

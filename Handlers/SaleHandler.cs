@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using BespokedBikesTimHawkins.Database.Models;
 using BespokedBikesTimHawkins.Database.Repositories;
@@ -47,7 +45,7 @@ namespace BespokedBikesTimHawkins.Handlers
             {
                 return this.saleRepo.GetAllBetweenDates(beginDate, endDate);
             }
-            catch
+            catch (Exception e)
             {
                 return null;
             }

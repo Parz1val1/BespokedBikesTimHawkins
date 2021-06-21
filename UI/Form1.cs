@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BespokedBikesTimHawkins.Database.Models;
 using BespokedBikesTimHawkins.Database.Repositories;
@@ -18,8 +11,8 @@ namespace BespokedBikesTimHawkins.UI
     {
         private readonly ISalespersonHandler salespersonHandler;
         private readonly IProductHandler productHandler;
-        private readonly ICustomerHandler customerHandler;
         private readonly ISaleHandler saleHandler;
+        private readonly ICommissionReportHandler commReportHandler;
         private readonly BeSpokedDbContext context;
 
         //Maybe clean this up with dependency injection?
@@ -31,14 +24,13 @@ namespace BespokedBikesTimHawkins.UI
             this.context = new BeSpokedDbContext();
             var salespersonRepo = new SalespersonRepository(context);
             var productRepo = new ProductRepository(context);
-            var customerRepo = new CustomerRepository(context);
             var saleRepo = new SaleRepository(context);
 
             // Instantiate handlers
             this.salespersonHandler = new SalespersonHandler(salespersonRepo);
             this.productHandler = new ProductHandler(productRepo);
-            this.customerHandler = new CustomerHandler(customerRepo);
             this.saleHandler = new SaleHandler(saleRepo);
+            this.commReportHandler = new CommissionReportHandler(salespersonRepo, saleRepo, productRepo);
         }
 
         #region Couldn't get rid of these or it would mess up the whole UI ¯\_(ツ)_/¯
@@ -231,7 +223,20 @@ namespace BespokedBikesTimHawkins.UI
         }
         #endregion
 
+        private void commissionReportsButton_Click(object sender, EventArgs e)
+        {
+            var quarter = commissionReportComboBox.SelectedItem.ToString();
+            if(Int32.TryParse(commissionReportYearTextBox.Text, out int year) && year <= DateTime.Now.Year)
+            {
+                var reports = this.commReportHandler.GenerateReports(quarter, year);
+                commissionReportsDataGridView.DataSource = reports;
+            }
+            else
+            {
+                MessageBox.Show("Invalid year entered");
+            }
 
+        }
 
         private void BeSpokedBikesForm_Load(object sender, EventArgs e)
         {
