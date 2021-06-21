@@ -5,6 +5,7 @@
  - Never built a UI in winforms either,so that was a new experience too, but thought I'd give it a try since Patrick said the Profisee main monolith was a winforms app.. I don't claim to be a UI/UX master, but it works at the very least! 
  - I tried to make the code as reusable and well separated as possible, and think I did a pretty good job. I'm not experienced enough in winforms to know if there's a better way to do the UI side of things, but again, it all works! 
  - Probably worked too hard on this for just an interview coding test, but I actually enjoyed getting to work at a small scale like this and really try to architect it out and learn the new systems as I went.
+ - Main thing I wish I could have gotten to waa unit tests, I made the test project and everything! just didnt have the time for it sadly.
 # Prompt
 BeSpoked Bikes is looking to create a sales tracking application.  BeSpoked is a high-end bicycle shop and each salesperson gets a commission for each bike they sell.  They are introducing a new quarterly bonus based on sales as an incentive.
 
