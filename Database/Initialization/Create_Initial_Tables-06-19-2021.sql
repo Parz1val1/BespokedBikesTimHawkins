@@ -1,5 +1,5 @@
 ﻿/*
-* Introduces Tables for Bespoked Bikes
+* Introduces Tables for Bespoked Bikes and fills them with test data
 */
 
 BEGIN TRANSACTION

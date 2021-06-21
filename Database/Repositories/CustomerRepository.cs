@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using BespokedBikesTimHawkins.Database.Models;
 
 namespace BespokedBikesTimHawkins.Database.Repositories
@@ -14,7 +10,7 @@ namespace BespokedBikesTimHawkins.Database.Repositories
         {
         }
 
-        public IList<Customer> GetCustomers()
+        public IList<Customer> GetAll()
         {
             return this.Context.Customers.Local;
         }

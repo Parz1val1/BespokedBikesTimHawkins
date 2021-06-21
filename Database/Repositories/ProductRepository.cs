@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using BespokedBikesTimHawkins.Database.Models;
 
@@ -13,16 +14,22 @@ namespace BespokedBikesTimHawkins.Database.Repositories
 
         public async Task<bool> UpdateAsync(Product product)
         {
-            var foundProduct = await this.Context.Products.FindAsync(product.ProductId);
+            var foundProduct = this.Context.Products.Where(p => p.ProductId == product.ProductId).SingleOrDefault();
             if(foundProduct != null)
             {
-                foundProduct = product;
+                foundProduct.Name = product.Name;
+                foundProduct.Manufacturer = product.Manufacturer;
+                foundProduct.Style = product.Style;
+                foundProduct.PurchasePrice = product.PurchasePrice;
+                foundProduct.SalePrice = product.SalePrice;
+                foundProduct.QtyOnHand = product.QtyOnHand;
+                foundProduct.CommissionPercentage = product.CommissionPercentage;
                 return await this.Context.SaveChangesAsync() == 1;
             }
             return false;
         }
 
-        public IList<Product> GetProducts()
+        public IList<Product> GetAll()
         {
             return this.Context.Products.Local;
         }

@@ -58,6 +58,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeSpokedDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BeSpokedDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BeSpokedDbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BeSpokedDbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Database\Models\BeSpokedDb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,9 +110,18 @@
     </Compile>
     <Compile Include="Database\Repositories\BaseRepository.cs" />
     <Compile Include="Database\Repositories\CustomerRepository.cs" />
+    <Compile Include="Database\Repositories\DiscountRepository.cs" />
     <Compile Include="Database\Repositories\ProductRepository.cs" />
     <Compile Include="Database\Repositories\SaleRepository.cs" />
     <Compile Include="Database\Repositories\SalespersonRepository.cs" />
+    <Compile Include="Handlers\CustomerHandler.cs" />
+    <Compile Include="Handlers\ICustomerHandler.cs" />
+    <Compile Include="Handlers\ISaleHandler.cs" />
+    <Compile Include="Handlers\ISalespersonHandler.cs" />
+    <Compile Include="Handlers\IProductHandler.cs" />
+    <Compile Include="Handlers\ProductHandler.cs" />
+    <Compile Include="Handlers\SaleHandler.cs" />
+    <Compile Include="Handlers\SalespersonHandler.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +146,50 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BeSpokedDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="BeSpokedDbDataSet.xsc">
+      <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BeSpokedDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BeSpokedDbDataSet.xss">
+      <DependentUpon>BeSpokedDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet1.xsc">
+      <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BeSpokedDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BeSpokedDbDataSet1.xss">
+      <DependentUpon>BeSpokedDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet2.xsc">
+      <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BeSpokedDbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BeSpokedDbDataSet2.xss">
+      <DependentUpon>BeSpokedDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet3.xsc">
+      <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BeSpokedDbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BeSpokedDbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BeSpokedDbDataSet3.xss">
+      <DependentUpon>BeSpokedDbDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Database\Models\BeSpokedDb.edmx.diagram">
       <DependentUpon>BeSpokedDb.edmx</DependentUpon>
     </None>

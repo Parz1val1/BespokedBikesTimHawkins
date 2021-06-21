@@ -13,12 +13,12 @@ namespace BespokedBikesTimHawkins.Database.Repositories
         {
         }
 
-        public IList<Sale> GetSales()
+        public IList<Sale> GetAll()
         {
             return this.Context.Sales.Local;
         }
 
-        public IList<Sale> GetSalesBetweenDates(DateTime beginDate, DateTime endDate)
+        public IList<Sale> GetAllBetweenDates(DateTime beginDate, DateTime endDate)
         {
             if(beginDate.Date < endDate.Date)
             {
@@ -34,7 +34,7 @@ namespace BespokedBikesTimHawkins.Database.Repositories
             }
         }
 
-        public async Task<bool> CreateSaleAsync(Sale newSale)
+        public async Task<bool> CreateAsync(Sale newSale)
         {
             this.Context.Sales.Add(newSale);
             return await this.Context.SaveChangesAsync() == 1;

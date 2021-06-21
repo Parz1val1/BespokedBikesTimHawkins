@@ -32,6 +32,20 @@ namespace BespokedBikesTimHawkins.UI
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.salespersonsTabPage = new System.Windows.Forms.TabPage();
+            this.salespersonsIdValueLabel = new System.Windows.Forms.Label();
+            this.salespersonsIdLabel = new System.Windows.Forms.Label();
+            this.salespersonsCheckBox = new System.Windows.Forms.CheckBox();
+            this.salespersonsDataGridView = new System.Windows.Forms.DataGridView();
+            this.salespersonIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.terminationDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.managerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salespersonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.beSpokedDbDataSet3 = new BespokedBikesTimHawkins.BeSpokedDbDataSet3();
             this.salespersonsStartDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.salespersonsTerminationDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.salespersonsUpdateButton = new System.Windows.Forms.Button();
@@ -43,12 +57,13 @@ namespace BespokedBikesTimHawkins.UI
             this.salespersonsPhoneTextBox = new System.Windows.Forms.TextBox();
             this.salespersonsAddressLabel = new System.Windows.Forms.Label();
             this.salespersonsAddressTextBox = new System.Windows.Forms.TextBox();
-            this.salespersonsDataGridView = new System.Windows.Forms.DataGridView();
             this.salespersonsLastNameLabel = new System.Windows.Forms.Label();
             this.salespersonsLastNameTextBox = new System.Windows.Forms.TextBox();
             this.salespersonsFirstNameLabel = new System.Windows.Forms.Label();
             this.salespersonsFirstNameTextBox = new System.Windows.Forms.TextBox();
             this.productsTabPage = new System.Windows.Forms.TabPage();
+            this.productsIdValueLabel = new System.Windows.Forms.Label();
+            this.productsIdLabel = new System.Windows.Forms.Label();
             this.productsUpdateButton = new System.Windows.Forms.Button();
             this.productsCommissionPercentageLabel = new System.Windows.Forms.Label();
             this.productsCommissionPercentageTextBox = new System.Windows.Forms.TextBox();
@@ -61,13 +76,32 @@ namespace BespokedBikesTimHawkins.UI
             this.productsStyleLabel = new System.Windows.Forms.Label();
             this.productsStyleTextBox = new System.Windows.Forms.TextBox();
             this.productsDataGridView = new System.Windows.Forms.DataGridView();
+            this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.styleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purchasePriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salePriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyOnHandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commissionPercentageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.beSpokedDbDataSet = new BespokedBikesTimHawkins.BeSpokedDbDataSet();
             this.productsManufacturerLabel = new System.Windows.Forms.Label();
             this.productsManufacturerTextBox = new System.Windows.Forms.TextBox();
             this.productsNameLabel = new System.Windows.Forms.Label();
             this.productsNameTextBox = new System.Windows.Forms.TextBox();
             this.customersTabPage = new System.Windows.Forms.TabPage();
             this.customersDataGridView = new System.Windows.Forms.DataGridView();
+            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.beSpokedDbDataSet1 = new BespokedBikesTimHawkins.BeSpokedDbDataSet1();
             this.salesTabPage = new System.Windows.Forms.TabPage();
+            this.salesShowAllButton = new System.Windows.Forms.Button();
             this.salesSearchbutton = new System.Windows.Forms.Button();
             this.salesCreateButton = new System.Windows.Forms.Button();
             this.salesDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -81,27 +115,42 @@ namespace BespokedBikesTimHawkins.UI
             this.salesToLabel = new System.Windows.Forms.Label();
             this.salesFromLabel = new System.Windows.Forms.Label();
             this.salesDataGridView = new System.Windows.Forms.DataGridView();
+            this.salesIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salespersonIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.beSpokedDbDataSet2 = new BespokedBikesTimHawkins.BeSpokedDbDataSet2();
             this.salesToDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.salesFromDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.productTableAdapter = new BespokedBikesTimHawkins.BeSpokedDbDataSetTableAdapters.ProductTableAdapter();
+            this.customerTableAdapter = new BespokedBikesTimHawkins.BeSpokedDbDataSet1TableAdapters.CustomerTableAdapter();
+            this.salesTableAdapter = new BespokedBikesTimHawkins.BeSpokedDbDataSet2TableAdapters.SalesTableAdapter();
+            this.salespersonTableAdapter = new BespokedBikesTimHawkins.BeSpokedDbDataSet3TableAdapters.SalespersonTableAdapter();
             this.salespersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.managerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.terminationDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salespersonIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commissionReportTabPage = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.salespersonsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet3)).BeginInit();
             this.productsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet)).BeginInit();
             this.customersTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet1)).BeginInit();
             this.salesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).BeginInit();
+            this.commissionReportTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -110,16 +159,21 @@ namespace BespokedBikesTimHawkins.UI
             this.tabControl.Controls.Add(this.productsTabPage);
             this.tabControl.Controls.Add(this.customersTabPage);
             this.tabControl.Controls.Add(this.salesTabPage);
+            this.tabControl.Controls.Add(this.commissionReportTabPage);
             this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tabControl.Location = new System.Drawing.Point(13, 14);
             this.tabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(967, 588);
+            this.tabControl.Size = new System.Drawing.Size(1296, 705);
             this.tabControl.TabIndex = 0;
             // 
             // salespersonsTabPage
             // 
+            this.salespersonsTabPage.Controls.Add(this.salespersonsIdValueLabel);
+            this.salespersonsTabPage.Controls.Add(this.salespersonsIdLabel);
+            this.salespersonsTabPage.Controls.Add(this.salespersonsCheckBox);
+            this.salespersonsTabPage.Controls.Add(this.salespersonsDataGridView);
             this.salespersonsTabPage.Controls.Add(this.salespersonsStartDateDateTimePicker);
             this.salespersonsTabPage.Controls.Add(this.salespersonsTerminationDateDateTimePicker);
             this.salespersonsTabPage.Controls.Add(this.salespersonsUpdateButton);
@@ -131,7 +185,6 @@ namespace BespokedBikesTimHawkins.UI
             this.salespersonsTabPage.Controls.Add(this.salespersonsPhoneTextBox);
             this.salespersonsTabPage.Controls.Add(this.salespersonsAddressLabel);
             this.salespersonsTabPage.Controls.Add(this.salespersonsAddressTextBox);
-            this.salespersonsTabPage.Controls.Add(this.salespersonsDataGridView);
             this.salespersonsTabPage.Controls.Add(this.salespersonsLastNameLabel);
             this.salespersonsTabPage.Controls.Add(this.salespersonsLastNameTextBox);
             this.salespersonsTabPage.Controls.Add(this.salespersonsFirstNameLabel);
@@ -140,28 +193,142 @@ namespace BespokedBikesTimHawkins.UI
             this.salespersonsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsTabPage.Name = "salespersonsTabPage";
             this.salespersonsTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.salespersonsTabPage.Size = new System.Drawing.Size(959, 555);
+            this.salespersonsTabPage.Size = new System.Drawing.Size(1288, 672);
             this.salespersonsTabPage.TabIndex = 0;
             this.salespersonsTabPage.Text = "Salespersons";
             this.salespersonsTabPage.UseVisualStyleBackColor = true;
             // 
+            // salespersonsIdValueLabel
+            // 
+            this.salespersonsIdValueLabel.AutoSize = true;
+            this.salespersonsIdValueLabel.Location = new System.Drawing.Point(144, 20);
+            this.salespersonsIdValueLabel.Name = "salespersonsIdValueLabel";
+            this.salespersonsIdValueLabel.Size = new System.Drawing.Size(0, 20);
+            this.salespersonsIdValueLabel.TabIndex = 22;
+            // 
+            // salespersonsIdLabel
+            // 
+            this.salespersonsIdLabel.AutoSize = true;
+            this.salespersonsIdLabel.Location = new System.Drawing.Point(108, 20);
+            this.salespersonsIdLabel.Name = "salespersonsIdLabel";
+            this.salespersonsIdLabel.Size = new System.Drawing.Size(30, 20);
+            this.salespersonsIdLabel.TabIndex = 21;
+            this.salespersonsIdLabel.Text = "ID:";
+            // 
+            // salespersonsCheckBox
+            // 
+            this.salespersonsCheckBox.AutoSize = true;
+            this.salespersonsCheckBox.Location = new System.Drawing.Point(431, 229);
+            this.salespersonsCheckBox.Name = "salespersonsCheckBox";
+            this.salespersonsCheckBox.Size = new System.Drawing.Size(139, 24);
+            this.salespersonsCheckBox.TabIndex = 20;
+            this.salespersonsCheckBox.Text = "Is still employed";
+            this.salespersonsCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // salespersonsDataGridView
+            // 
+            this.salespersonsDataGridView.AutoGenerateColumns = false;
+            this.salespersonsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.salespersonsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.salespersonsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salespersonIdDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn,
+            this.startDateDataGridViewTextBoxColumn,
+            this.terminationDateDataGridViewTextBoxColumn,
+            this.managerDataGridViewTextBoxColumn});
+            this.salespersonsDataGridView.DataSource = this.salespersonBindingSource1;
+            this.salespersonsDataGridView.Location = new System.Drawing.Point(7, 350);
+            this.salespersonsDataGridView.Name = "salespersonsDataGridView";
+            this.salespersonsDataGridView.Size = new System.Drawing.Size(1274, 314);
+            this.salespersonsDataGridView.TabIndex = 19;
+            this.salespersonsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salespersonsDataGridView_CellContentClick_1);
+            // 
+            // salespersonIdDataGridViewTextBoxColumn
+            // 
+            this.salespersonIdDataGridViewTextBoxColumn.DataPropertyName = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn.HeaderText = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn.Name = "salespersonIdDataGridViewTextBoxColumn";
+            this.salespersonIdDataGridViewTextBoxColumn.Width = 137;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.Width = 107;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.Width = 107;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 93;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // startDateDataGridViewTextBoxColumn
+            // 
+            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
+            this.startDateDataGridViewTextBoxColumn.Width = 104;
+            // 
+            // terminationDateDataGridViewTextBoxColumn
+            // 
+            this.terminationDateDataGridViewTextBoxColumn.DataPropertyName = "TerminationDate";
+            this.terminationDateDataGridViewTextBoxColumn.HeaderText = "TerminationDate";
+            this.terminationDateDataGridViewTextBoxColumn.Name = "terminationDateDataGridViewTextBoxColumn";
+            this.terminationDateDataGridViewTextBoxColumn.Width = 152;
+            // 
+            // managerDataGridViewTextBoxColumn
+            // 
+            this.managerDataGridViewTextBoxColumn.DataPropertyName = "Manager";
+            this.managerDataGridViewTextBoxColumn.HeaderText = "Manager";
+            this.managerDataGridViewTextBoxColumn.Name = "managerDataGridViewTextBoxColumn";
+            this.managerDataGridViewTextBoxColumn.Width = 97;
+            // 
+            // salespersonBindingSource1
+            // 
+            this.salespersonBindingSource1.DataMember = "Salesperson";
+            this.salespersonBindingSource1.DataSource = this.beSpokedDbDataSet3;
+            // 
+            // beSpokedDbDataSet3
+            // 
+            this.beSpokedDbDataSet3.DataSetName = "BeSpokedDbDataSet3";
+            this.beSpokedDbDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // salespersonsStartDateDateTimePicker
             // 
-            this.salespersonsStartDateDateTimePicker.Location = new System.Drawing.Point(149, 143);
+            this.salespersonsStartDateDateTimePicker.Location = new System.Drawing.Point(145, 192);
             this.salespersonsStartDateDateTimePicker.Name = "salespersonsStartDateDateTimePicker";
-            this.salespersonsStartDateDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.salespersonsStartDateDateTimePicker.Size = new System.Drawing.Size(280, 26);
             this.salespersonsStartDateDateTimePicker.TabIndex = 18;
             // 
             // salespersonsTerminationDateDateTimePicker
             // 
-            this.salespersonsTerminationDateDateTimePicker.Location = new System.Drawing.Point(149, 180);
+            this.salespersonsTerminationDateDateTimePicker.Location = new System.Drawing.Point(145, 229);
             this.salespersonsTerminationDateDateTimePicker.Name = "salespersonsTerminationDateDateTimePicker";
-            this.salespersonsTerminationDateDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.salespersonsTerminationDateDateTimePicker.Size = new System.Drawing.Size(280, 26);
             this.salespersonsTerminationDateDateTimePicker.TabIndex = 17;
             // 
             // salespersonsUpdateButton
             // 
-            this.salespersonsUpdateButton.Location = new System.Drawing.Point(11, 249);
+            this.salespersonsUpdateButton.Location = new System.Drawing.Point(7, 298);
             this.salespersonsUpdateButton.Name = "salespersonsUpdateButton";
             this.salespersonsUpdateButton.Size = new System.Drawing.Size(418, 46);
             this.salespersonsUpdateButton.TabIndex = 16;
@@ -172,7 +339,7 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonsManagerLabel
             // 
             this.salespersonsManagerLabel.AutoSize = true;
-            this.salespersonsManagerLabel.Location = new System.Drawing.Point(66, 218);
+            this.salespersonsManagerLabel.Location = new System.Drawing.Point(62, 267);
             this.salespersonsManagerLabel.Name = "salespersonsManagerLabel";
             this.salespersonsManagerLabel.Size = new System.Drawing.Size(76, 20);
             this.salespersonsManagerLabel.TabIndex = 15;
@@ -180,7 +347,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsManagerTextBox
             // 
-            this.salespersonsManagerTextBox.Location = new System.Drawing.Point(149, 215);
+            this.salespersonsManagerTextBox.Location = new System.Drawing.Point(145, 264);
             this.salespersonsManagerTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsManagerTextBox.Name = "salespersonsManagerTextBox";
             this.salespersonsManagerTextBox.Size = new System.Drawing.Size(280, 26);
@@ -189,7 +356,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesPersonsTerminationDateLabel
             // 
             this.salesPersonsTerminationDateLabel.AutoSize = true;
-            this.salesPersonsTerminationDateLabel.Location = new System.Drawing.Point(7, 182);
+            this.salesPersonsTerminationDateLabel.Location = new System.Drawing.Point(3, 231);
             this.salesPersonsTerminationDateLabel.Name = "salesPersonsTerminationDateLabel";
             this.salesPersonsTerminationDateLabel.Size = new System.Drawing.Size(135, 20);
             this.salesPersonsTerminationDateLabel.TabIndex = 13;
@@ -198,7 +365,7 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonsStartDateLabel
             // 
             this.salespersonsStartDateLabel.AutoSize = true;
-            this.salespersonsStartDateLabel.Location = new System.Drawing.Point(58, 149);
+            this.salespersonsStartDateLabel.Location = new System.Drawing.Point(54, 198);
             this.salespersonsStartDateLabel.Name = "salespersonsStartDateLabel";
             this.salespersonsStartDateLabel.Size = new System.Drawing.Size(87, 20);
             this.salespersonsStartDateLabel.TabIndex = 11;
@@ -208,7 +375,7 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonsPhoneLabel
             // 
             this.salespersonsPhoneLabel.AutoSize = true;
-            this.salespersonsPhoneLabel.Location = new System.Drawing.Point(83, 113);
+            this.salespersonsPhoneLabel.Location = new System.Drawing.Point(79, 162);
             this.salespersonsPhoneLabel.Name = "salespersonsPhoneLabel";
             this.salespersonsPhoneLabel.Size = new System.Drawing.Size(59, 20);
             this.salespersonsPhoneLabel.TabIndex = 9;
@@ -216,7 +383,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsPhoneTextBox
             // 
-            this.salespersonsPhoneTextBox.Location = new System.Drawing.Point(149, 110);
+            this.salespersonsPhoneTextBox.Location = new System.Drawing.Point(145, 159);
             this.salespersonsPhoneTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsPhoneTextBox.Name = "salespersonsPhoneTextBox";
             this.salespersonsPhoneTextBox.Size = new System.Drawing.Size(280, 26);
@@ -226,7 +393,7 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonsAddressLabel
             // 
             this.salespersonsAddressLabel.AutoSize = true;
-            this.salespersonsAddressLabel.Location = new System.Drawing.Point(70, 74);
+            this.salespersonsAddressLabel.Location = new System.Drawing.Point(66, 123);
             this.salespersonsAddressLabel.Name = "salespersonsAddressLabel";
             this.salespersonsAddressLabel.Size = new System.Drawing.Size(72, 20);
             this.salespersonsAddressLabel.TabIndex = 7;
@@ -234,36 +401,16 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsAddressTextBox
             // 
-            this.salespersonsAddressTextBox.Location = new System.Drawing.Point(149, 74);
+            this.salespersonsAddressTextBox.Location = new System.Drawing.Point(145, 123);
             this.salespersonsAddressTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsAddressTextBox.Name = "salespersonsAddressTextBox";
             this.salespersonsAddressTextBox.Size = new System.Drawing.Size(280, 26);
             this.salespersonsAddressTextBox.TabIndex = 6;
             // 
-            // salespersonsDataGridView
-            // 
-            this.salespersonsDataGridView.AutoGenerateColumns = false;
-            this.salespersonsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.salespersonsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.salespersonIdDataGridViewTextBoxColumn,
-            this.firstnameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.terminationDateDataGridViewTextBoxColumn,
-            this.managerDataGridViewTextBoxColumn});
-            this.salespersonsDataGridView.DataSource = this.salespersonBindingSource;
-            this.salespersonsDataGridView.Location = new System.Drawing.Point(11, 305);
-            this.salespersonsDataGridView.Name = "salespersonsDataGridView";
-            this.salespersonsDataGridView.Size = new System.Drawing.Size(941, 242);
-            this.salespersonsDataGridView.TabIndex = 5;
-            this.salespersonsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salespersonsDataGridView_CellContentClick);
-            // 
             // salespersonsLastNameLabel
             // 
             this.salespersonsLastNameLabel.AutoSize = true;
-            this.salespersonsLastNameLabel.Location = new System.Drawing.Point(52, 41);
+            this.salespersonsLastNameLabel.Location = new System.Drawing.Point(48, 90);
             this.salespersonsLastNameLabel.Name = "salespersonsLastNameLabel";
             this.salespersonsLastNameLabel.Size = new System.Drawing.Size(90, 20);
             this.salespersonsLastNameLabel.TabIndex = 4;
@@ -271,7 +418,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsLastNameTextBox
             // 
-            this.salespersonsLastNameTextBox.Location = new System.Drawing.Point(149, 38);
+            this.salespersonsLastNameTextBox.Location = new System.Drawing.Point(145, 87);
             this.salespersonsLastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsLastNameTextBox.Name = "salespersonsLastNameTextBox";
             this.salespersonsLastNameTextBox.Size = new System.Drawing.Size(280, 26);
@@ -281,7 +428,7 @@ namespace BespokedBikesTimHawkins.UI
             // salespersonsFirstNameLabel
             // 
             this.salespersonsFirstNameLabel.AutoSize = true;
-            this.salespersonsFirstNameLabel.Location = new System.Drawing.Point(52, 8);
+            this.salespersonsFirstNameLabel.Location = new System.Drawing.Point(48, 57);
             this.salespersonsFirstNameLabel.Name = "salespersonsFirstNameLabel";
             this.salespersonsFirstNameLabel.Size = new System.Drawing.Size(90, 20);
             this.salespersonsFirstNameLabel.TabIndex = 2;
@@ -289,7 +436,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salespersonsFirstNameTextBox
             // 
-            this.salespersonsFirstNameTextBox.Location = new System.Drawing.Point(149, 5);
+            this.salespersonsFirstNameTextBox.Location = new System.Drawing.Point(145, 54);
             this.salespersonsFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salespersonsFirstNameTextBox.Name = "salespersonsFirstNameTextBox";
             this.salespersonsFirstNameTextBox.Size = new System.Drawing.Size(280, 26);
@@ -298,6 +445,8 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsTabPage
             // 
+            this.productsTabPage.Controls.Add(this.productsIdValueLabel);
+            this.productsTabPage.Controls.Add(this.productsIdLabel);
             this.productsTabPage.Controls.Add(this.productsUpdateButton);
             this.productsTabPage.Controls.Add(this.productsCommissionPercentageLabel);
             this.productsTabPage.Controls.Add(this.productsCommissionPercentageTextBox);
@@ -318,14 +467,31 @@ namespace BespokedBikesTimHawkins.UI
             this.productsTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsTabPage.Name = "productsTabPage";
             this.productsTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.productsTabPage.Size = new System.Drawing.Size(959, 555);
+            this.productsTabPage.Size = new System.Drawing.Size(1288, 672);
             this.productsTabPage.TabIndex = 1;
             this.productsTabPage.Text = "Products";
             this.productsTabPage.UseVisualStyleBackColor = true;
             // 
+            // productsIdValueLabel
+            // 
+            this.productsIdValueLabel.AutoSize = true;
+            this.productsIdValueLabel.Location = new System.Drawing.Point(191, 14);
+            this.productsIdValueLabel.Name = "productsIdValueLabel";
+            this.productsIdValueLabel.Size = new System.Drawing.Size(0, 20);
+            this.productsIdValueLabel.TabIndex = 34;
+            // 
+            // productsIdLabel
+            // 
+            this.productsIdLabel.AutoSize = true;
+            this.productsIdLabel.Location = new System.Drawing.Point(155, 14);
+            this.productsIdLabel.Name = "productsIdLabel";
+            this.productsIdLabel.Size = new System.Drawing.Size(30, 20);
+            this.productsIdLabel.TabIndex = 33;
+            this.productsIdLabel.Text = "ID:";
+            // 
             // productsUpdateButton
             // 
-            this.productsUpdateButton.Location = new System.Drawing.Point(20, 250);
+            this.productsUpdateButton.Location = new System.Drawing.Point(17, 283);
             this.productsUpdateButton.Name = "productsUpdateButton";
             this.productsUpdateButton.Size = new System.Drawing.Size(455, 46);
             this.productsUpdateButton.TabIndex = 32;
@@ -336,7 +502,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsCommissionPercentageLabel
             // 
             this.productsCommissionPercentageLabel.AutoSize = true;
-            this.productsCommissionPercentageLabel.Location = new System.Drawing.Point(3, 219);
+            this.productsCommissionPercentageLabel.Location = new System.Drawing.Point(0, 252);
             this.productsCommissionPercentageLabel.Name = "productsCommissionPercentageLabel";
             this.productsCommissionPercentageLabel.Size = new System.Drawing.Size(185, 20);
             this.productsCommissionPercentageLabel.TabIndex = 31;
@@ -344,7 +510,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsCommissionPercentageTextBox
             // 
-            this.productsCommissionPercentageTextBox.Location = new System.Drawing.Point(195, 219);
+            this.productsCommissionPercentageTextBox.Location = new System.Drawing.Point(192, 252);
             this.productsCommissionPercentageTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsCommissionPercentageTextBox.Name = "productsCommissionPercentageTextBox";
             this.productsCommissionPercentageTextBox.Size = new System.Drawing.Size(280, 26);
@@ -353,7 +519,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsQtyOnHandLabel
             // 
             this.productsQtyOnHandLabel.AutoSize = true;
-            this.productsQtyOnHandLabel.Location = new System.Drawing.Point(83, 186);
+            this.productsQtyOnHandLabel.Location = new System.Drawing.Point(80, 219);
             this.productsQtyOnHandLabel.Name = "productsQtyOnHandLabel";
             this.productsQtyOnHandLabel.Size = new System.Drawing.Size(105, 20);
             this.productsQtyOnHandLabel.TabIndex = 29;
@@ -361,7 +527,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsQtyOnHandTextBox
             // 
-            this.productsQtyOnHandTextBox.Location = new System.Drawing.Point(195, 183);
+            this.productsQtyOnHandTextBox.Location = new System.Drawing.Point(192, 216);
             this.productsQtyOnHandTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsQtyOnHandTextBox.Name = "productsQtyOnHandTextBox";
             this.productsQtyOnHandTextBox.Size = new System.Drawing.Size(280, 26);
@@ -370,7 +536,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsSalesPriceLabel
             // 
             this.productsSalesPriceLabel.AutoSize = true;
-            this.productsSalesPriceLabel.Location = new System.Drawing.Point(96, 150);
+            this.productsSalesPriceLabel.Location = new System.Drawing.Point(93, 183);
             this.productsSalesPriceLabel.Name = "productsSalesPriceLabel";
             this.productsSalesPriceLabel.Size = new System.Drawing.Size(92, 20);
             this.productsSalesPriceLabel.TabIndex = 27;
@@ -378,7 +544,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsSalesPriceTextBox
             // 
-            this.productsSalesPriceTextBox.Location = new System.Drawing.Point(195, 147);
+            this.productsSalesPriceTextBox.Location = new System.Drawing.Point(192, 180);
             this.productsSalesPriceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsSalesPriceTextBox.Name = "productsSalesPriceTextBox";
             this.productsSalesPriceTextBox.Size = new System.Drawing.Size(280, 26);
@@ -387,7 +553,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsPurchasePriceLabel
             // 
             this.productsPurchasePriceLabel.AutoSize = true;
-            this.productsPurchasePriceLabel.Location = new System.Drawing.Point(69, 114);
+            this.productsPurchasePriceLabel.Location = new System.Drawing.Point(66, 147);
             this.productsPurchasePriceLabel.Name = "productsPurchasePriceLabel";
             this.productsPurchasePriceLabel.Size = new System.Drawing.Size(119, 20);
             this.productsPurchasePriceLabel.TabIndex = 25;
@@ -395,7 +561,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsPurchasePriceTextBox
             // 
-            this.productsPurchasePriceTextBox.Location = new System.Drawing.Point(195, 111);
+            this.productsPurchasePriceTextBox.Location = new System.Drawing.Point(192, 144);
             this.productsPurchasePriceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsPurchasePriceTextBox.Name = "productsPurchasePriceTextBox";
             this.productsPurchasePriceTextBox.Size = new System.Drawing.Size(280, 26);
@@ -404,7 +570,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsStyleLabel
             // 
             this.productsStyleLabel.AutoSize = true;
-            this.productsStyleLabel.Location = new System.Drawing.Point(140, 78);
+            this.productsStyleLabel.Location = new System.Drawing.Point(137, 111);
             this.productsStyleLabel.Name = "productsStyleLabel";
             this.productsStyleLabel.Size = new System.Drawing.Size(48, 20);
             this.productsStyleLabel.TabIndex = 23;
@@ -412,7 +578,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsStyleTextBox
             // 
-            this.productsStyleTextBox.Location = new System.Drawing.Point(195, 75);
+            this.productsStyleTextBox.Location = new System.Drawing.Point(192, 108);
             this.productsStyleTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsStyleTextBox.Name = "productsStyleTextBox";
             this.productsStyleTextBox.Size = new System.Drawing.Size(280, 26);
@@ -420,17 +586,95 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsDataGridView
             // 
+            this.productsDataGridView.AutoGenerateColumns = false;
+            this.productsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.productsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsDataGridView.Location = new System.Drawing.Point(20, 306);
+            this.productsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productIdDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.manufacturerDataGridViewTextBoxColumn,
+            this.styleDataGridViewTextBoxColumn,
+            this.purchasePriceDataGridViewTextBoxColumn,
+            this.salePriceDataGridViewTextBoxColumn,
+            this.qtyOnHandDataGridViewTextBoxColumn,
+            this.commissionPercentageDataGridViewTextBoxColumn});
+            this.productsDataGridView.DataSource = this.productBindingSource;
+            this.productsDataGridView.Location = new System.Drawing.Point(7, 335);
             this.productsDataGridView.Name = "productsDataGridView";
-            this.productsDataGridView.Size = new System.Drawing.Size(932, 242);
+            this.productsDataGridView.Size = new System.Drawing.Size(1274, 329);
             this.productsDataGridView.TabIndex = 21;
             this.productsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDataGridView_CellContentClick);
+            // 
+            // productIdDataGridViewTextBoxColumn
+            // 
+            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "ProductId";
+            this.productIdDataGridViewTextBoxColumn.HeaderText = "ProductId";
+            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+            this.productIdDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 76;
+            // 
+            // manufacturerDataGridViewTextBoxColumn
+            // 
+            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
+            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Manufacturer";
+            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
+            this.manufacturerDataGridViewTextBoxColumn.Width = 129;
+            // 
+            // styleDataGridViewTextBoxColumn
+            // 
+            this.styleDataGridViewTextBoxColumn.DataPropertyName = "Style";
+            this.styleDataGridViewTextBoxColumn.HeaderText = "Style";
+            this.styleDataGridViewTextBoxColumn.Name = "styleDataGridViewTextBoxColumn";
+            this.styleDataGridViewTextBoxColumn.Width = 69;
+            // 
+            // purchasePriceDataGridViewTextBoxColumn
+            // 
+            this.purchasePriceDataGridViewTextBoxColumn.DataPropertyName = "PurchasePrice";
+            this.purchasePriceDataGridViewTextBoxColumn.HeaderText = "PurchasePrice";
+            this.purchasePriceDataGridViewTextBoxColumn.Name = "purchasePriceDataGridViewTextBoxColumn";
+            this.purchasePriceDataGridViewTextBoxColumn.Width = 136;
+            // 
+            // salePriceDataGridViewTextBoxColumn
+            // 
+            this.salePriceDataGridViewTextBoxColumn.DataPropertyName = "SalePrice";
+            this.salePriceDataGridViewTextBoxColumn.HeaderText = "SalePrice";
+            this.salePriceDataGridViewTextBoxColumn.Name = "salePriceDataGridViewTextBoxColumn";
+            this.salePriceDataGridViewTextBoxColumn.Width = 101;
+            // 
+            // qtyOnHandDataGridViewTextBoxColumn
+            // 
+            this.qtyOnHandDataGridViewTextBoxColumn.DataPropertyName = "QtyOnHand";
+            this.qtyOnHandDataGridViewTextBoxColumn.HeaderText = "QtyOnHand";
+            this.qtyOnHandDataGridViewTextBoxColumn.Name = "qtyOnHandDataGridViewTextBoxColumn";
+            this.qtyOnHandDataGridViewTextBoxColumn.Width = 118;
+            // 
+            // commissionPercentageDataGridViewTextBoxColumn
+            // 
+            this.commissionPercentageDataGridViewTextBoxColumn.DataPropertyName = "CommissionPercentage";
+            this.commissionPercentageDataGridViewTextBoxColumn.HeaderText = "CommissionPercentage";
+            this.commissionPercentageDataGridViewTextBoxColumn.Name = "commissionPercentageDataGridViewTextBoxColumn";
+            this.commissionPercentageDataGridViewTextBoxColumn.Width = 202;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.beSpokedDbDataSet;
+            // 
+            // beSpokedDbDataSet
+            // 
+            this.beSpokedDbDataSet.DataSetName = "BeSpokedDbDataSet";
+            this.beSpokedDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // productsManufacturerLabel
             // 
             this.productsManufacturerLabel.AutoSize = true;
-            this.productsManufacturerLabel.Location = new System.Drawing.Point(80, 42);
+            this.productsManufacturerLabel.Location = new System.Drawing.Point(77, 75);
             this.productsManufacturerLabel.Name = "productsManufacturerLabel";
             this.productsManufacturerLabel.Size = new System.Drawing.Size(108, 20);
             this.productsManufacturerLabel.TabIndex = 20;
@@ -439,7 +683,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsManufacturerTextBox
             // 
-            this.productsManufacturerTextBox.Location = new System.Drawing.Point(195, 39);
+            this.productsManufacturerTextBox.Location = new System.Drawing.Point(192, 72);
             this.productsManufacturerTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsManufacturerTextBox.Name = "productsManufacturerTextBox";
             this.productsManufacturerTextBox.Size = new System.Drawing.Size(280, 26);
@@ -448,7 +692,7 @@ namespace BespokedBikesTimHawkins.UI
             // productsNameLabel
             // 
             this.productsNameLabel.AutoSize = true;
-            this.productsNameLabel.Location = new System.Drawing.Point(133, 9);
+            this.productsNameLabel.Location = new System.Drawing.Point(130, 42);
             this.productsNameLabel.Name = "productsNameLabel";
             this.productsNameLabel.Size = new System.Drawing.Size(55, 20);
             this.productsNameLabel.TabIndex = 18;
@@ -457,7 +701,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // productsNameTextBox
             // 
-            this.productsNameTextBox.Location = new System.Drawing.Point(195, 6);
+            this.productsNameTextBox.Location = new System.Drawing.Point(192, 39);
             this.productsNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.productsNameTextBox.Name = "productsNameTextBox";
             this.productsNameTextBox.Size = new System.Drawing.Size(280, 26);
@@ -470,21 +714,84 @@ namespace BespokedBikesTimHawkins.UI
             this.customersTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customersTabPage.Name = "customersTabPage";
             this.customersTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.customersTabPage.Size = new System.Drawing.Size(959, 555);
+            this.customersTabPage.Size = new System.Drawing.Size(1288, 672);
             this.customersTabPage.TabIndex = 2;
             this.customersTabPage.Text = "Customers";
             this.customersTabPage.UseVisualStyleBackColor = true;
             // 
             // customersDataGridView
             // 
+            this.customersDataGridView.AutoGenerateColumns = false;
+            this.customersDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.customerIdDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn1,
+            this.lastNameDataGridViewTextBoxColumn1,
+            this.addressDataGridViewTextBoxColumn1,
+            this.phoneDataGridViewTextBoxColumn1,
+            this.startDateDataGridViewTextBoxColumn1});
+            this.customersDataGridView.DataSource = this.customerBindingSource;
             this.customersDataGridView.Location = new System.Drawing.Point(7, 8);
             this.customersDataGridView.Name = "customersDataGridView";
-            this.customersDataGridView.Size = new System.Drawing.Size(945, 539);
+            this.customersDataGridView.Size = new System.Drawing.Size(1274, 656);
             this.customersDataGridView.TabIndex = 22;
+            // 
+            // customerIdDataGridViewTextBoxColumn
+            // 
+            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.HeaderText = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
+            this.customerIdDataGridViewTextBoxColumn.Width = 117;
+            // 
+            // firstNameDataGridViewTextBoxColumn1
+            // 
+            this.firstNameDataGridViewTextBoxColumn1.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn1.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn1.Name = "firstNameDataGridViewTextBoxColumn1";
+            this.firstNameDataGridViewTextBoxColumn1.Width = 107;
+            // 
+            // lastNameDataGridViewTextBoxColumn1
+            // 
+            this.lastNameDataGridViewTextBoxColumn1.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn1.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn1.Name = "lastNameDataGridViewTextBoxColumn1";
+            this.lastNameDataGridViewTextBoxColumn1.Width = 107;
+            // 
+            // addressDataGridViewTextBoxColumn1
+            // 
+            this.addressDataGridViewTextBoxColumn1.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn1.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn1.Name = "addressDataGridViewTextBoxColumn1";
+            this.addressDataGridViewTextBoxColumn1.Width = 93;
+            // 
+            // phoneDataGridViewTextBoxColumn1
+            // 
+            this.phoneDataGridViewTextBoxColumn1.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn1.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn1.Name = "phoneDataGridViewTextBoxColumn1";
+            this.phoneDataGridViewTextBoxColumn1.Width = 80;
+            // 
+            // startDateDataGridViewTextBoxColumn1
+            // 
+            this.startDateDataGridViewTextBoxColumn1.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn1.Name = "startDateDataGridViewTextBoxColumn1";
+            this.startDateDataGridViewTextBoxColumn1.Width = 104;
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "Customer";
+            this.customerBindingSource.DataSource = this.beSpokedDbDataSet1;
+            // 
+            // beSpokedDbDataSet1
+            // 
+            this.beSpokedDbDataSet1.DataSetName = "BeSpokedDbDataSet1";
+            this.beSpokedDbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // salesTabPage
             // 
+            this.salesTabPage.Controls.Add(this.salesShowAllButton);
             this.salesTabPage.Controls.Add(this.salesSearchbutton);
             this.salesTabPage.Controls.Add(this.salesCreateButton);
             this.salesTabPage.Controls.Add(this.salesDateDateTimePicker);
@@ -504,16 +811,27 @@ namespace BespokedBikesTimHawkins.UI
             this.salesTabPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salesTabPage.Name = "salesTabPage";
             this.salesTabPage.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.salesTabPage.Size = new System.Drawing.Size(959, 555);
+            this.salesTabPage.Size = new System.Drawing.Size(1288, 672);
             this.salesTabPage.TabIndex = 3;
             this.salesTabPage.Text = "Sales";
             this.salesTabPage.UseVisualStyleBackColor = true;
+            this.salesTabPage.Click += new System.EventHandler(this.salesTabPage_Click);
+            // 
+            // salesShowAllButton
+            // 
+            this.salesShowAllButton.Location = new System.Drawing.Point(663, 162);
+            this.salesShowAllButton.Name = "salesShowAllButton";
+            this.salesShowAllButton.Size = new System.Drawing.Size(88, 28);
+            this.salesShowAllButton.TabIndex = 35;
+            this.salesShowAllButton.Text = "Show All";
+            this.salesShowAllButton.UseVisualStyleBackColor = true;
+            this.salesShowAllButton.Click += new System.EventHandler(this.salesShowAllButton_Click);
             // 
             // salesSearchbutton
             // 
-            this.salesSearchbutton.Location = new System.Drawing.Point(512, 198);
+            this.salesSearchbutton.Location = new System.Drawing.Point(663, 196);
             this.salesSearchbutton.Name = "salesSearchbutton";
-            this.salesSearchbutton.Size = new System.Drawing.Size(78, 25);
+            this.salesSearchbutton.Size = new System.Drawing.Size(88, 28);
             this.salesSearchbutton.TabIndex = 34;
             this.salesSearchbutton.Text = "Search";
             this.salesSearchbutton.UseVisualStyleBackColor = true;
@@ -521,7 +839,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salesCreateButton
             // 
-            this.salesCreateButton.Location = new System.Drawing.Point(7, 155);
+            this.salesCreateButton.Location = new System.Drawing.Point(3, 155);
             this.salesCreateButton.Name = "salesCreateButton";
             this.salesCreateButton.Size = new System.Drawing.Size(411, 37);
             this.salesCreateButton.TabIndex = 33;
@@ -531,14 +849,14 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salesDateDateTimePicker
             // 
-            this.salesDateDateTimePicker.Location = new System.Drawing.Point(138, 116);
+            this.salesDateDateTimePicker.Location = new System.Drawing.Point(134, 116);
             this.salesDateDateTimePicker.Name = "salesDateDateTimePicker";
-            this.salesDateDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.salesDateDateTimePicker.Size = new System.Drawing.Size(280, 26);
             this.salesDateDateTimePicker.TabIndex = 32;
             // 
             // salesCustomerIdTextBox
             // 
-            this.salesCustomerIdTextBox.Location = new System.Drawing.Point(138, 82);
+            this.salesCustomerIdTextBox.Location = new System.Drawing.Point(134, 82);
             this.salesCustomerIdTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salesCustomerIdTextBox.Name = "salesCustomerIdTextBox";
             this.salesCustomerIdTextBox.Size = new System.Drawing.Size(280, 26);
@@ -546,7 +864,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salesSalespersonIdTextBox
             // 
-            this.salesSalespersonIdTextBox.Location = new System.Drawing.Point(138, 46);
+            this.salesSalespersonIdTextBox.Location = new System.Drawing.Point(134, 46);
             this.salesSalespersonIdTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salesSalespersonIdTextBox.Name = "salesSalespersonIdTextBox";
             this.salesSalespersonIdTextBox.Size = new System.Drawing.Size(280, 26);
@@ -554,7 +872,7 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salesProductIdTextBox
             // 
-            this.salesProductIdTextBox.Location = new System.Drawing.Point(138, 10);
+            this.salesProductIdTextBox.Location = new System.Drawing.Point(134, 10);
             this.salesProductIdTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salesProductIdTextBox.Name = "salesProductIdTextBox";
             this.salesProductIdTextBox.Size = new System.Drawing.Size(280, 26);
@@ -563,7 +881,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesDateLabel
             // 
             this.salesDateLabel.AutoSize = true;
-            this.salesDateLabel.Location = new System.Drawing.Point(39, 121);
+            this.salesDateLabel.Location = new System.Drawing.Point(35, 121);
             this.salesDateLabel.Name = "salesDateLabel";
             this.salesDateLabel.Size = new System.Drawing.Size(92, 20);
             this.salesDateLabel.TabIndex = 28;
@@ -573,7 +891,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesCustomerIdLabel
             // 
             this.salesCustomerIdLabel.AutoSize = true;
-            this.salesCustomerIdLabel.Location = new System.Drawing.Point(28, 85);
+            this.salesCustomerIdLabel.Location = new System.Drawing.Point(24, 85);
             this.salesCustomerIdLabel.Name = "salesCustomerIdLabel";
             this.salesCustomerIdLabel.Size = new System.Drawing.Size(103, 20);
             this.salesCustomerIdLabel.TabIndex = 27;
@@ -582,7 +900,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesSalespersonIdLabel
             // 
             this.salesSalespersonIdLabel.AutoSize = true;
-            this.salesSalespersonIdLabel.Location = new System.Drawing.Point(7, 49);
+            this.salesSalespersonIdLabel.Location = new System.Drawing.Point(3, 49);
             this.salesSalespersonIdLabel.Name = "salesSalespersonIdLabel";
             this.salesSalespersonIdLabel.Size = new System.Drawing.Size(120, 20);
             this.salesSalespersonIdLabel.TabIndex = 26;
@@ -592,7 +910,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesProductIdLabel
             // 
             this.salesProductIdLabel.AutoSize = true;
-            this.salesProductIdLabel.Location = new System.Drawing.Point(42, 13);
+            this.salesProductIdLabel.Location = new System.Drawing.Point(38, 13);
             this.salesProductIdLabel.Name = "salesProductIdLabel";
             this.salesProductIdLabel.Size = new System.Drawing.Size(89, 20);
             this.salesProductIdLabel.TabIndex = 25;
@@ -601,7 +919,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesToLabel
             // 
             this.salesToLabel.AutoSize = true;
-            this.salesToLabel.Location = new System.Drawing.Point(269, 203);
+            this.salesToLabel.Location = new System.Drawing.Point(340, 202);
             this.salesToLabel.Name = "salesToLabel";
             this.salesToLabel.Size = new System.Drawing.Size(31, 20);
             this.salesToLabel.TabIndex = 24;
@@ -610,7 +928,7 @@ namespace BespokedBikesTimHawkins.UI
             // salesFromLabel
             // 
             this.salesFromLabel.AutoSize = true;
-            this.salesFromLabel.Location = new System.Drawing.Point(7, 203);
+            this.salesFromLabel.Location = new System.Drawing.Point(3, 203);
             this.salesFromLabel.Name = "salesFromLabel";
             this.salesFromLabel.Size = new System.Drawing.Size(50, 20);
             this.salesFromLabel.TabIndex = 23;
@@ -618,102 +936,154 @@ namespace BespokedBikesTimHawkins.UI
             // 
             // salesDataGridView
             // 
+            this.salesDataGridView.AutoGenerateColumns = false;
+            this.salesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.salesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.salesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salesIdDataGridViewTextBoxColumn,
+            this.productIdDataGridViewTextBoxColumn1,
+            this.salespersonIdDataGridViewTextBoxColumn1,
+            this.customerIdDataGridViewTextBoxColumn1,
+            this.salesDateDataGridViewTextBoxColumn});
+            this.salesDataGridView.DataSource = this.salesBindingSource;
             this.salesDataGridView.Location = new System.Drawing.Point(7, 230);
             this.salesDataGridView.Name = "salesDataGridView";
-            this.salesDataGridView.Size = new System.Drawing.Size(945, 317);
+            this.salesDataGridView.Size = new System.Drawing.Size(1274, 434);
             this.salesDataGridView.TabIndex = 22;
+            // 
+            // salesIdDataGridViewTextBoxColumn
+            // 
+            this.salesIdDataGridViewTextBoxColumn.DataPropertyName = "SalesId";
+            this.salesIdDataGridViewTextBoxColumn.HeaderText = "SalesId";
+            this.salesIdDataGridViewTextBoxColumn.Name = "salesIdDataGridViewTextBoxColumn";
+            this.salesIdDataGridViewTextBoxColumn.Width = 88;
+            // 
+            // productIdDataGridViewTextBoxColumn1
+            // 
+            this.productIdDataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
+            this.productIdDataGridViewTextBoxColumn1.HeaderText = "ProductId";
+            this.productIdDataGridViewTextBoxColumn1.Name = "productIdDataGridViewTextBoxColumn1";
+            this.productIdDataGridViewTextBoxColumn1.Width = 103;
+            // 
+            // salespersonIdDataGridViewTextBoxColumn1
+            // 
+            this.salespersonIdDataGridViewTextBoxColumn1.DataPropertyName = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn1.HeaderText = "SalespersonId";
+            this.salespersonIdDataGridViewTextBoxColumn1.Name = "salespersonIdDataGridViewTextBoxColumn1";
+            this.salespersonIdDataGridViewTextBoxColumn1.Width = 137;
+            // 
+            // customerIdDataGridViewTextBoxColumn1
+            // 
+            this.customerIdDataGridViewTextBoxColumn1.DataPropertyName = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn1.HeaderText = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn1.Name = "customerIdDataGridViewTextBoxColumn1";
+            this.customerIdDataGridViewTextBoxColumn1.Width = 117;
+            // 
+            // salesDateDataGridViewTextBoxColumn
+            // 
+            this.salesDateDataGridViewTextBoxColumn.DataPropertyName = "SalesDate";
+            this.salesDateDataGridViewTextBoxColumn.HeaderText = "SalesDate";
+            this.salesDateDataGridViewTextBoxColumn.Name = "salesDateDataGridViewTextBoxColumn";
+            this.salesDateDataGridViewTextBoxColumn.Width = 109;
+            // 
+            // salesBindingSource
+            // 
+            this.salesBindingSource.DataMember = "Sales";
+            this.salesBindingSource.DataSource = this.beSpokedDbDataSet2;
+            // 
+            // beSpokedDbDataSet2
+            // 
+            this.beSpokedDbDataSet2.DataSetName = "BeSpokedDbDataSet2";
+            this.beSpokedDbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // salesToDateTimePicker
             // 
-            this.salesToDateTimePicker.Location = new System.Drawing.Point(306, 198);
+            this.salesToDateTimePicker.Location = new System.Drawing.Point(377, 198);
             this.salesToDateTimePicker.Name = "salesToDateTimePicker";
-            this.salesToDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.salesToDateTimePicker.Size = new System.Drawing.Size(280, 26);
             this.salesToDateTimePicker.TabIndex = 1;
             // 
             // salesFromDateTimePicker
             // 
-            this.salesFromDateTimePicker.Location = new System.Drawing.Point(63, 198);
+            this.salesFromDateTimePicker.Location = new System.Drawing.Point(59, 198);
             this.salesFromDateTimePicker.Name = "salesFromDateTimePicker";
-            this.salesFromDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.salesFromDateTimePicker.Size = new System.Drawing.Size(275, 26);
             this.salesFromDateTimePicker.TabIndex = 0;
             this.salesFromDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
+            // 
+            // salesTableAdapter
+            // 
+            this.salesTableAdapter.ClearBeforeFill = true;
+            // 
+            // salespersonTableAdapter
+            // 
+            this.salespersonTableAdapter.ClearBeforeFill = true;
             // 
             // salespersonBindingSource
             // 
             this.salespersonBindingSource.DataSource = typeof(BespokedBikesTimHawkins.Database.Models.Salesperson);
             // 
-            // managerDataGridViewTextBoxColumn
+            // commissionReportTabPage
             // 
-            this.managerDataGridViewTextBoxColumn.DataPropertyName = "Manager";
-            this.managerDataGridViewTextBoxColumn.HeaderText = "Manager";
-            this.managerDataGridViewTextBoxColumn.Name = "managerDataGridViewTextBoxColumn";
+            this.commissionReportTabPage.Controls.Add(this.dataGridView1);
+            this.commissionReportTabPage.Location = new System.Drawing.Point(4, 29);
+            this.commissionReportTabPage.Name = "commissionReportTabPage";
+            this.commissionReportTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.commissionReportTabPage.Size = new System.Drawing.Size(1288, 672);
+            this.commissionReportTabPage.TabIndex = 4;
+            this.commissionReportTabPage.Text = "Commission Report";
+            this.commissionReportTabPage.UseVisualStyleBackColor = true;
             // 
-            // terminationDateDataGridViewTextBoxColumn
+            // dataGridView1
             // 
-            this.terminationDateDataGridViewTextBoxColumn.DataPropertyName = "TerminationDate";
-            this.terminationDateDataGridViewTextBoxColumn.HeaderText = "TerminationDate";
-            this.terminationDateDataGridViewTextBoxColumn.Name = "terminationDateDataGridViewTextBoxColumn";
-            // 
-            // startDateDataGridViewTextBoxColumn
-            // 
-            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // firstnameDataGridViewTextBoxColumn
-            // 
-            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "Firstname";
-            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Firstname";
-            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
-            // 
-            // salespersonIdDataGridViewTextBoxColumn
-            // 
-            this.salespersonIdDataGridViewTextBoxColumn.DataPropertyName = "SalespersonId";
-            this.salespersonIdDataGridViewTextBoxColumn.HeaderText = "SalespersonId";
-            this.salespersonIdDataGridViewTextBoxColumn.Name = "salespersonIdDataGridViewTextBoxColumn";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 169);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1279, 497);
+            this.dataGridView1.TabIndex = 0;
             // 
             // BeSpokedBikesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 616);
+            this.ClientSize = new System.Drawing.Size(1322, 733);
             this.Controls.Add(this.tabControl);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BeSpokedBikesForm";
             this.Text = "BeSpoked Bikes";
+            this.Load += new System.EventHandler(this.BeSpokedBikesForm_Load);
             this.tabControl.ResumeLayout(false);
             this.salespersonsTabPage.ResumeLayout(false);
             this.salespersonsTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet3)).EndInit();
             this.productsTabPage.ResumeLayout(false);
             this.productsTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet)).EndInit();
             this.customersTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet1)).EndInit();
             this.salesTabPage.ResumeLayout(false);
             this.salesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beSpokedDbDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salespersonBindingSource)).EndInit();
+            this.commissionReportTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -726,7 +1096,6 @@ namespace BespokedBikesTimHawkins.UI
         private System.Windows.Forms.TextBox salespersonsPhoneTextBox;
         private System.Windows.Forms.Label salespersonsAddressLabel;
         private System.Windows.Forms.TextBox salespersonsAddressTextBox;
-        private System.Windows.Forms.DataGridView salespersonsDataGridView;
         private System.Windows.Forms.Label salespersonsLastNameLabel;
         private System.Windows.Forms.TextBox salespersonsLastNameTextBox;
         private System.Windows.Forms.Label salespersonsFirstNameLabel;
@@ -774,14 +1143,54 @@ namespace BespokedBikesTimHawkins.UI
         private System.Windows.Forms.DateTimePicker salespersonsStartDateDateTimePicker;
         private System.Windows.Forms.DateTimePicker salespersonsTerminationDateDateTimePicker;
         private System.Windows.Forms.BindingSource salespersonBindingSource;
+        private BeSpokedDbDataSet beSpokedDbDataSet;
+        private System.Windows.Forms.BindingSource productBindingSource;
+        private BeSpokedDbDataSetTableAdapters.ProductTableAdapter productTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn manufacturerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn styleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purchasePriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salePriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtyOnHandDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn commissionPercentageDataGridViewTextBoxColumn;
+        private BeSpokedDbDataSet1 beSpokedDbDataSet1;
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private BeSpokedDbDataSet1TableAdapters.CustomerTableAdapter customerTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn1;
+        private BeSpokedDbDataSet2 beSpokedDbDataSet2;
+        private System.Windows.Forms.BindingSource salesBindingSource;
+        private BeSpokedDbDataSet2TableAdapters.SalesTableAdapter salesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salespersonIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesDateDataGridViewTextBoxColumn;
+        private BeSpokedDbDataSet3 beSpokedDbDataSet3;
+        private System.Windows.Forms.BindingSource salespersonBindingSource1;
+        private BeSpokedDbDataSet3TableAdapters.SalespersonTableAdapter salespersonTableAdapter;
+        private System.Windows.Forms.DataGridView salespersonsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn salespersonIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn terminationDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn managerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.CheckBox salespersonsCheckBox;
+        private System.Windows.Forms.Label salespersonsIdValueLabel;
+        private System.Windows.Forms.Label salespersonsIdLabel;
+        private System.Windows.Forms.Label productsIdValueLabel;
+        private System.Windows.Forms.Label productsIdLabel;
+        private System.Windows.Forms.Button salesShowAllButton;
+        private System.Windows.Forms.TabPage commissionReportTabPage;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
